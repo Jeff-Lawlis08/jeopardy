@@ -1,9 +1,17 @@
 body {
+  background-image: url('../assets/images/jeopardy.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
   #container{
-
+    font-size: 30px;
+    position: relative;
     .scoreboard {
       margin: 0 auto;
       text-align: center;
+      border: 1px solid black;
+      width: 30%;
+      background: #000DB0;
+      color: #F99A39;
     }
   .all-columns {
     &::after{
@@ -22,9 +30,14 @@ body {
 
       &:nth-of-type(1n) {
         list-style: none;
+
         li {
           border: 1px solid black;
           width: 100%;
+          text-align: center;
+          height: 80px;
+          background: #000DB0;
+          color: #F99A39;
         }
       }
       .question-column {
@@ -33,6 +46,24 @@ body {
           list-style: none;
           width: 100%;
           padding: 0;
+        }
+        .modal-container{
+          position: absolute;
+          width: 90%;
+          background-color: rgba(0, 0, 0, 0.6);
+          height: 25rem;
+          left: 5%;
+          top: 4rem;
+        .modal {
+          width: 47%;
+          position: absolute;
+          background-color: white;
+          margin: 0 auto;
+          left: 26%;
+          z-index: 20;
+          padding-bottom: 2rem;
+          top: 3rem;
+          }
         }
       }
     }

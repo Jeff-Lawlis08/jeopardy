@@ -4,7 +4,7 @@ export default React.createClass({
   render() {
     return(
     <li>
-      {this.props.title}
+      {this.props.title.toUpperCase()}
     </li>
     );
   }
