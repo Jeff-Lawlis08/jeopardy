@@ -25,7 +25,7 @@ export default React.createClass({
         return clue;
       });
     return(
-      <ul>
+      <ul className="question-column">
         <QuestionBox clue={values200}/>
         <QuestionBox clue={values400}/>
         <QuestionBox clue={values600}/>

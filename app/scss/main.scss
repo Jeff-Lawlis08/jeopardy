@@ -1,0 +1,41 @@
+body {
+  #container{
+
+    .scoreboard {
+      margin: 0 auto;
+      text-align: center;
+    }
+  .all-columns {
+    &::after{
+      display: block;
+      clear: both;
+      content: '';
+    }
+    &:nth-of-type(1n) {
+      list-style: none;
+    }
+    .single-column {
+      display: inline-block;
+      float: left;
+      width: 16%;
+      padding: 0;
+
+      &:nth-of-type(1n) {
+        list-style: none;
+        li {
+          border: 1px solid black;
+          width: 100%;
+        }
+      }
+      .question-column {
+        text-align: center;
+        &:nth-of-type(1n) {
+          list-style: none;
+          width: 100%;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+}

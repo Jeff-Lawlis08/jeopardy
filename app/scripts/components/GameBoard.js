@@ -8,7 +8,7 @@ export default React.createClass({
       return <Columns key={category.title} category={category}/>
     })
     return(
-      <ul>
+      <ul className="all-columns">
         {allColumns}
       </ul>
       // <ul><Columns/></ul>

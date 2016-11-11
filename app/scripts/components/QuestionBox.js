@@ -2,9 +2,9 @@ import React from 'react';
 import Backbone from 'backbone';
 import Modal from './modal';
 import store from '../store';
+import _ from 'underscore';
 
 export default React.createClass({
-
       // console.log(this.props);
       getInitialState(){
         return {

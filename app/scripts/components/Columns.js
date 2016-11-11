@@ -6,7 +6,7 @@ export default React.createClass({
   render(){
     return(
       <li>
-        <ul>
+        <ul className="single-column">
           <CategoryBox title={this.props.category.title}/>
           <QuestionList clues={this.props.category.clues}/>
         </ul>
